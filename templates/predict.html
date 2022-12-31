@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>
+</head>
+<body>
+    <form action="/action/predict" method="POST">
+        <h3>Enter an inning number (1-9)</h3>
+        <input type="text" name="inning" placeholder="Inning">
+        <br>
+        <h3>Enter a wOBA value (0.0-1.0, e.g. 0.342)</h3>
+        <input type="text" name="wOBA" placeholder="wOBA">
+        <br>
+        <h3>Enter number of outs when up (0-2)</h3>
+        <input type="text" name="outs" placeholder="Outs">
+        <br>
+        <h3>Let's see if it was a swing!</h3>
+        <input type="submit" value="Submit!">
+    </form>
+</body>
+</html>

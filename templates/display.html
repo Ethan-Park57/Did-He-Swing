@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+</head>
+<body>
+    <h3>Distribution of swings vs non swings after a first-pitch out</h3>
+    <img src="data:image/png;base64, {{ plot_url }}">
+
+    <p>Swings: {{ swings }}</p>
+    <p>Non-Swings: {{ non_swings }}</p>
+
+    <p>This is a visualization of EXISTING data, without manipulation.
+        The main reason there are < 5000 data points is because a first-pitch out may end an inning.</p>
+</body>
+</html>

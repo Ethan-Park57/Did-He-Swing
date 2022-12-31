@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swing Predictor</title>
+</head>
+<body>
+    <h1>Did He Swing*?</h1>
+    <p>
+        When a batter swings at the first pitch of an at-bat and records an out, can we predict whether the next batter
+        will swing at the first pitch? Based on inning number, quality of contact (estimated wOBA from launch angle
+        and exit velocity), and outs recorded, I hoped to be able to predict this with high accuracy. The implications
+        of making accurate predictions are huge for pitchers. With a difference of ~0.07 runs between an 1-0 count and
+        an 0-1 count, stealing strikes in this quite common situation is incredibly valuable.
+    </p>
+
+    <h3>Enter your own data, and see a prediction!</h3>
+    <a href="{{ url_for('predict') }}">
+        <button type="button" name="to_prediction">I want to see a prediction!</button>
+    </a>
+
+
+    <h3>See the results of 5000 recent first-pitch out events!</h3>
+    <a href="{{ url_for('display') }}">
+        <button type="button" name="to_display">I want to see 5000 events!</button>
+    </a>
+
+</body>
+</html>
